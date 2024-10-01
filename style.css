@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Monocraft'; /*a name to be used later*/
+    src: url('./Monocraft.ttc') /*URL to font*/
+}
+
+a:link { text-decoration: none; }
+
+body{
+    background-color: aqua;
+    overflow: hidden;
+    font-family: Monocraft;
+}
+
+
+header{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}   
+
+.name{
+    color: orange;
+    background-color: darkblue;
+    margin: 10px;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 25px;
+    border-color: rgb(200, 13, 13);
+    font-size: 50px;
+    padding: 25px;
+    
+    display: block;
+    position: fixed;
+    text-decoration: none;   
+}
+
+nav{
+    background-color: pink;
+    list-style-type: none;
+    border-radius: 25px;
+    text-decoration: none;
+    position: fixed;
+    float: none;
+    top: 35%;
+    width: 150px;
+    outline-color: black;
+    padding: 25px;
+}
+
+li a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+li a:hover{
+    background-color: rgb(202, 136, 49);
+    border-radius: 25px;
+}
+
+.active{
+    color: blue;
+}
+
+h1{
+    text-align: right;
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+.render{
+    align-items: center;
+    border: 15px blue;
+}
