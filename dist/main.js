@@ -2,7 +2,7 @@ import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/0.168.0/
 
 import { OrbitControls } from 'https://unpkg.com/three@0.168.0/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://unpkg.com/three@0.168.0/examples/jsm/loaders/GLTFLoader.js';
-import { cubeTexture } from 'three/src/Three.WebGPU.js';
+
 
 //Main important scene stuff
 const scene = new THREE.Scene();
