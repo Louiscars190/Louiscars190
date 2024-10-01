@@ -1,0 +1,27 @@
+{
+  "homepage": "https://louiscars190.github.io/Louiscars190/",
+  "name": "eportfolio",
+  "version": "1.0.0",
+  "description": "This is my personal portfolio",
+  "main": "main.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Louiscars190/Louiscars190.git"
+  },
+  "keywords": [
+    "portfolio",
+    "3js"
+  ],
+  "author": "Louis Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Louiscars190/Louiscars190/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
