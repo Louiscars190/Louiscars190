@@ -5,8 +5,7 @@
   "description": "This is my personal portfolio",
   "main": "main.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d src"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
