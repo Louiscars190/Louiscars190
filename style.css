@@ -73,3 +73,10 @@ h1{
     align-items: center;
     border: 15px blue;
 }
+
+#applemusic{
+    display: block;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+}
