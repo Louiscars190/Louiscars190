@@ -1,7 +1,7 @@
 <h1 align="center">Hey What's Up My name is Louis</h1>
 <h3 align="center">A Mechanical Engineering Student Passionate in Technology</h3>
 
-- 🔭 I’m currently working on [ThreeJs Website](https://github.com/Louiscars190/Louiscars190)
+- 🔭 I’m currently working on [My Personal ThreeJs Website](https://github.com/Louiscars190/Louiscars190)
 
 - 🌱 I’m currently learning **Full-Stack Web Development**
 
