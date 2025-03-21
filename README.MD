@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on [My Personal ThreeJs Website](https://louiscars190.github.io/Louiscars190/)
 
-- 🌱 I’m currently learning **Full-Stack Web Development**
+- 🌱 I’m currently learning **Full-Stack Web Development and Vehicle Development**
 
 - 💬 Ask me about **Cars!**
 
