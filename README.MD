@@ -1,9 +1,9 @@
 <h1 align="center">Hey What's Up My name is Louis</h1>
 <h3 align="center">A Mechanical Engineering Student Passionate in Technology</h3>
 
-- 🔭 I’m currently working on [My Personal ThreeJs Website](https://louiscars190.github.io/Louiscars190/)
+- 🔭 I’m currently working on [Concordia Formula Racing Firmware](https://github.com/concordia-fsae/firmware)
 
-- 🌱 I’m currently learning **Full-Stack Web Development and Vehicle Development**
+- 🌱 I’m currently learning **Embedded Systems**
 
 - 💬 Ask me about **Cars!**
 
