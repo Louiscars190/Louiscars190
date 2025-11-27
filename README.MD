@@ -1,6 +1,5 @@
 <h1 align="center">Hey What's Up My name is Louis</h1>
 <h3 align="center">A Mechanical Engineering Student Passionate in Technology</h3>
-<h2 align="center"><em>Live like Da Vinci, Build like Tesla, Heal like Hippocrates</em></h2>
 
 
 - 🔭 I’m currently working on [Concordia Formula Racing Firmware](https://github.com/concordia-fsae/firmware)
