@@ -211,12 +211,26 @@ h2 {
   font-size: 0.9rem;
 }
 
+
 .cv-embed {
   width: 100%;
   min-height: 70vh;
   border: 1px solid var(--border);
   border-radius: 12px;
-  background: #ffffff;
+  background: #0b1220;
+  overflow: hidden;
+  padding: 0.75rem;
+}
+
+.adobe-pdf-view {
+  width: 100%;
+  height: 72vh;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pdf-fallback {
+  padding: 1rem;
 }
 
 .cv-actions p {
