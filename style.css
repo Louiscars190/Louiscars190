@@ -211,6 +211,14 @@ h2 {
   font-size: 0.9rem;
 }
 
+.cv-embed {
+  width: 100%;
+  min-height: 70vh;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
 .cv-actions p {
   margin-bottom: 0;
 }
