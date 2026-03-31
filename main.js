@@ -1,6 +1,6 @@
 const pdfUrl = "./assets/Mechanical_Resume_Louis.pdf";
 const fallback = document.getElementById("pdf-fallback");
-const CLIENT_ID = "REPLACE_WITH_YOUR_ADOBE_PDF_EMBED_CLIENT_ID";
+const CLIENT_ID = "72cdcdd2aa6f45b4a5663eae7bc7c08a";
 
 const showFallback = () => {
   if (fallback) fallback.hidden = false;
@@ -26,6 +26,7 @@ if (!CLIENT_ID || CLIENT_ID.includes("REPLACE_WITH")) {
             embedMode: "SIZED_CONTAINER",
             showDownloadPDF: true,
             showPrintPDF: true,
+	  	defaultViewMode: "FIT_WIDTH",  
           },
         )
         .catch(showFallback);
