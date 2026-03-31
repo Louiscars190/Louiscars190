@@ -137,7 +137,7 @@ h2 {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
@@ -153,6 +153,14 @@ h2 {
 .card h3,
 .timeline h3 {
   margin: 0 0 0.45rem;
+}
+
+.project-photo {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin: 0.35rem 0 0.8rem;
 }
 
 .meta {
