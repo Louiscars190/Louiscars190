@@ -2,9 +2,10 @@
   "homepage": "https://louiscars190.github.io/Louiscars190/",
   "name": "eportfolio",
   "version": "1.0.0",
-  "description": "This is my personal portfolio",
+  "description": "Minimal static portfolio for GitHub Pages",
   "main": "main.js",
   "scripts": {
+    "preview": "python3 -m http.server 4173 --directory dist",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -13,7 +14,8 @@
   },
   "keywords": [
     "portfolio",
-    "3js"
+    "github-pages",
+    "static-site"
   ],
   "author": "Louis Nguyen",
   "license": "ISC",
