@@ -1,111 +1,135 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Louis Nguyen design portfolio" />
-    <title>Louis Nguyen | Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Louis Nguyen | Design Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="topbar">
-      <a class="logo" href="#home">Louis Nguyen</a>
-      <nav aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#cv">CV</a>
-      </nav>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home">Louis Nguyen</a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#cv">CV</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main id="home">
-      <section class="hero shell">
-        <p class="kicker">Mechanical Engineering • Embedded Systems • Product Design</p>
-        <h1>Clean, fast portfolio site optimized for GitHub Pages.</h1>
-        <p>
-          This version removes legacy 3D content and focuses on what your class needs: clear
-          sections, readable project summaries, and a CV block you can update in minutes.
+      <section class="hero container">
+        <p class="eyebrow">Mechanical Engineering × Product Design</p>
+        <h1>Portfolio concept for your class submission.</h1>
+        <p class="hero-copy">
+          A clean GitHub Pages layout with no Three.js dependency, focused on fast loading,
+          polished typography, and easy updates before your deadline.
         </p>
-        <div class="actions">
-          <a class="btn primary" href="#projects">Browse Projects</a>
-          <a class="btn" href="#cv">Open CV Section</a>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#cv">See CV</a>
         </div>
       </section>
 
-      <section id="about" class="shell panel">
+      <section id="about" class="section container">
         <h2>About Me</h2>
         <p>
-          I'm a Mechanical Engineering student at Concordia University. I build practical systems
-          at the intersection of hardware, software, and performance engineering.
+          I'm Louis, a Mechanical Engineering student at Concordia University who enjoys building
+          systems where hardware and software meet. I like taking ideas from concept to tested
+          prototype, especially in motorsport and embedded applications.
+        </p>
+        <p>
+          This portfolio template highlights your strengths with a strong visual hierarchy and
+          direct access to your key class requirements.
         </p>
       </section>
 
-      <section id="projects" class="shell">
+      <section id="projects" class="section container">
         <h2>Projects</h2>
-        <div class="grid cols-3">
+        <div class="card-grid">
           <article class="card">
-            <h3>Dual Clutch Paddle System</h3>
-            <p>ESP32 + C++ wireless paddle shifter system for Formula wheel control.</p>
+            <h3>Formula Steering Wheel Paddle System</h3>
+            <p>
+              ESP32-based dual clutch paddle concept with hall sensors and Bluetooth for responsive
+              control and lightweight packaging.
+            </p>
           </article>
           <article class="card">
-            <h3>Accumulator + Harness Packaging</h3>
-            <p>Electrical architecture, thermal-aware enclosure layout, and integration planning.</p>
+            <h3>High-Voltage Harness Architecture</h3>
+            <p>
+              Electrical harness design and integration workflow for dynamic race conditions,
+              emphasizing reliability and serviceability.
+            </p>
           </article>
           <article class="card">
-            <h3>Hydrogel Research Support</h3>
-            <p>Experimental setup, confocal analysis, and iteration on formulation outcomes.</p>
+            <h3>Hydrogel Mechanical Testing</h3>
+            <p>
+              Research support in biosensor and bio-ink formulation, with imaging analysis to link
+              material ratios and cell viability outcomes.
+            </p>
           </article>
         </div>
       </section>
 
-      <section id="experience" class="shell">
+      <section id="experience" class="section container">
         <h2>Experience</h2>
         <div class="timeline">
-          <article class="card">
+          <article>
             <h3>GLV Harness and Enclosures Lead · Concordia Formula Racing</h3>
-            <p class="meta">Jan 2025 – Present · Montreal, Quebec</p>
+            <p class="meta">January 2025 – Present · Montreal, Quebec</p>
             <p>
-              Leads low-voltage architecture and harness implementation with accumulator and PCB
-              integration support.
+              Co-designed the accumulator and low-voltage wiring architecture, led PCB integration,
+              and supported firmware debugging and system validation.
             </p>
           </article>
-          <article class="card">
+          <article>
             <h3>Research Assistant · McGill Craniofacial Tissue Engineering Lab</h3>
-            <p class="meta">Jun 2024 – Present · Montreal, Quebec</p>
+            <p class="meta">June 2024 – Present · Montreal, Quebec</p>
             <p>
-              Supports hydrogel test workflows and imaging-driven analysis for material behavior.
+              Contributed to hydrogel research workflows, sample preparation, microscopy, and data
+              interpretation for experimental characterization.
             </p>
           </article>
         </div>
       </section>
 
-      <section id="cv" class="shell">
+      <section id="cv" class="section container">
         <h2>CV</h2>
-        <div class="grid cols-2">
-          <article class="cv card">
-            <h3>Louis Nguyen</h3>
-            <p class="meta">Kirkland, QC · louiscars170@gmail.com · github.com/louiscars190</p>
+        <p class="section-intro">
+          Starter CV block based on your uploaded resume image. Replace this starter summary with your full CV embed or downloadable PDF when ready.
+        </p>
+        <div class="cv-panel">
+          <article class="cv-preview" aria-label="Starter CV preview based on your image">
+            <h3>LOUIS NGUYEN</h3>
+            <p class="cv-contact">Kirkland, QC · louiscars170@gmail.com · github.com/louiscars190</p>
+            <h4>Education</h4>
             <ul>
-              <li>Concordia University — BEng Mechanical Engineering (2024–2028 expected)</li>
-              <li>GLV Harness and Enclosures Lead — Concordia Formula Racing</li>
-              <li>Research Assistant — McGill Tissue Engineering Lab</li>
-              <li>Project: Hand Dual-Clutch Paddles (C++, ESP-IDF, ESP32)</li>
+              <li>Concordia University — Mechanical Engineering (Sep 2024 – May 2028 expected)</li>
+            </ul>
+            <h4>Relevant Experience</h4>
+            <ul>
+              <li>GLV Harness and Enclosures Lead / Accumulator Co-Designer — Concordia Formula Racing</li>
+              <li>Research Assistant — McGill Laboratory of Craniofacial Tissue Engineering and Stem Cells</li>
+            </ul>
+            <h4>Personal Technical Projects</h4>
+            <ul>
+              <li>Hand Dual-Clutch Paddles for Formula Wheel (C++, ESP-IDF, ESP32)</li>
             </ul>
           </article>
-          <aside class="card note">
-            <h3>Replace with final CV</h3>
-            <p>
-              Put your final PDF at <code>dist/assets/louis-nguyen-cv.pdf</code> and add the download
-              link here.
-            </p>
-            <a class="btn primary" href="#" aria-disabled="true">Add CV Link</a>
-          </aside>
+          <div class="cv-actions">
+            <a class="btn btn-primary" href="#" aria-disabled="true">Download CV (Add Link)</a>
+            <p>Tip: upload your real CV file to <code>dist/assets/louis-nguyen-cv.pdf</code> and link this button.</p>
+          </div>
         </div>
       </section>
     </main>
