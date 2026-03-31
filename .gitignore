@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Build/runtime caches
+node_modules/.cache/
+node_modules/.vite/
+node_modules/.vite*/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

@@ -1,32 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-        <meta http-equiv='cache-control' content='no-cache'> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css"> <!--< This is to connect the style sheet>-->
-		<title>Louis's Personal Portfolio</title>
-		<style>
-			body { margin: 0; }
-		</style>
-	</head>
-	<body>
-        <header>
-            <a href="#" class="name">Louis Nguyen</a>   
-        <nav>
-                <li><a href="#" class="active">Home</a></li> <!--<This is for css when we want it to say "oh this is selected and darken it or something">-->
-                 <!--<this is a line break, so it skips to thhe next line<-->
-                <li><a href="#" >About me!</a></li>
-                <li><a href="testing.html" >Resume</a></li>  
-                <li><a href="projects.html" >Projects</a></li>
-            </nav>
-        </header>
-        <h1>Welome to my 3D Portfolio!</h1>
-        <p> 
-            <!--<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Fale_F1_Monza_2004_31.jpg/600px-Fale_F1_Monza_2004_31.jpg" alt="Car">-->
-		<script id=render type="module" src="main.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Louis Nguyen design portfolio" />
+    <title>Louis Nguyen | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="logo" href="#home">Louis Nguyen</a>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#cv">CV</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero shell">
+        <p class="kicker">Mechanical Engineering • Embedded Systems • Product Design</p>
+        <h1>Clean, fast portfolio site optimized for GitHub Pages.</h1>
+        <p>
+          This version removes legacy 3D content and focuses on what your class needs: clear
+          sections, readable project summaries, and a CV block you can update in minutes.
         </p>
-	</body>
-    <iframe id="applemusic" allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:300px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/ca/playlist/study-motivation-music/pl.u-RRbVY6WF3xGJvXo"></iframe>
-</html> 
+        <div class="actions">
+          <a class="btn primary" href="#projects">Browse Projects</a>
+          <a class="btn" href="#cv">Open CV Section</a>
+        </div>
+      </section>
+
+      <section id="about" class="shell panel">
+        <h2>About Me</h2>
+        <p>
+          I'm a Mechanical Engineering student at Concordia University. I build practical systems
+          at the intersection of hardware, software, and performance engineering.
+        </p>
+      </section>
+
+      <section id="projects" class="shell">
+        <h2>Projects</h2>
+        <div class="grid cols-3">
+          <article class="card">
+            <h3>Dual Clutch Paddle System</h3>
+            <p>ESP32 + C++ wireless paddle shifter system for Formula wheel control.</p>
+          </article>
+          <article class="card">
+            <h3>Accumulator + Harness Packaging</h3>
+            <p>Electrical architecture, thermal-aware enclosure layout, and integration planning.</p>
+          </article>
+          <article class="card">
+            <h3>Hydrogel Research Support</h3>
+            <p>Experimental setup, confocal analysis, and iteration on formulation outcomes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="shell">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="card">
+            <h3>GLV Harness and Enclosures Lead · Concordia Formula Racing</h3>
+            <p class="meta">Jan 2025 – Present · Montreal, Quebec</p>
+            <p>
+              Leads low-voltage architecture and harness implementation with accumulator and PCB
+              integration support.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Research Assistant · McGill Craniofacial Tissue Engineering Lab</h3>
+            <p class="meta">Jun 2024 – Present · Montreal, Quebec</p>
+            <p>
+              Supports hydrogel test workflows and imaging-driven analysis for material behavior.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="cv" class="shell">
+        <h2>CV</h2>
+        <div class="grid cols-2">
+          <article class="cv card">
+            <h3>Louis Nguyen</h3>
+            <p class="meta">Kirkland, QC · louiscars170@gmail.com · github.com/louiscars190</p>
+            <ul>
+              <li>Concordia University — BEng Mechanical Engineering (2024–2028 expected)</li>
+              <li>GLV Harness and Enclosures Lead — Concordia Formula Racing</li>
+              <li>Research Assistant — McGill Tissue Engineering Lab</li>
+              <li>Project: Hand Dual-Clutch Paddles (C++, ESP-IDF, ESP32)</li>
+            </ul>
+          </article>
+          <aside class="card note">
+            <h3>Replace with final CV</h3>
+            <p>
+              Put your final PDF at <code>dist/assets/louis-nguyen-cv.pdf</code> and add the download
+              link here.
+            </p>
+            <a class="btn primary" href="#" aria-disabled="true">Add CV Link</a>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

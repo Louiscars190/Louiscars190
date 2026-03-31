@@ -1,82 +1,185 @@
-@font-face {
-    font-family: 'Monocraft'; /*a name to be used later*/
-    src: url('./Monocraft.ttc') /*URL to font*/
+:root {
+  --bg: #0a0f1f;
+  --bg-soft: #121a31;
+  --card: #141f3a;
+  --text: #ecf2ff;
+  --muted: #b6c4df;
+  --line: rgba(182, 196, 223, 0.26);
+  --accent: #74c0fc;
 }
 
-a:link { text-decoration: none; }
-
-body{
-    background-color: aqua;
-    overflow: hidden;
-    font-family: Monocraft;
+* {
+  box-sizing: border-box;
 }
 
-
-header{
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-}   
-
-.name{
-    color: orange;
-    background-color: darkblue;
-    margin: 10px;
-    border-style: solid;
-    border-width: 10px;
-    border-radius: 25px;
-    border-color: rgb(200, 13, 13);
-    font-size: 50px;
-    padding: 25px;
-    
-    display: block;
-    position: fixed;
-    text-decoration: none;   
+html {
+  scroll-behavior: smooth;
 }
 
-nav{
-    background-color: pink;
-    list-style-type: none;
-    border-radius: 25px;
-    text-decoration: none;
-    position: fixed;
-    float: none;
-    top: 35%;
-    width: 150px;
-    outline-color: black;
-    padding: 25px;
+body {
+  margin: 0;
+  font-family: 'Manrope', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background: radial-gradient(80rem 35rem at 10% -10%, #1b2c57 0%, var(--bg) 45%);
+  line-height: 1.65;
 }
 
-li a{
-    display: block;
-    text-align: center;
-    padding: 10px;
-    font-size: 25px;
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem min(5vw, 3rem);
+  border-bottom: 1px solid var(--line);
+  background: rgba(10, 15, 31, 0.88);
+  backdrop-filter: blur(8px);
 }
 
-li a:hover{
-    background-color: rgb(202, 136, 49);
-    border-radius: 25px;
+.logo {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.4px;
 }
 
-.active{
-    color: blue;
+.topbar nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-h1{
-    text-align: right;
-    padding-right: 10px;
-    font-size: 30px;
+.topbar nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.render{
-    align-items: center;
-    border: 15px blue;
+.topbar nav a:hover {
+  color: var(--accent);
 }
 
-#applemusic{
-    display: block;
-    position: absolute;
-    top: 200px;
-    right: 0px;
+.shell {
+  width: min(1050px, 92vw);
+  margin: 0 auto;
+  padding: 1.75rem 0;
+}
+
+.hero {
+  padding-top: 4.5rem;
+}
+
+.kicker {
+  margin: 0;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0.6rem 0 1rem;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.12;
+}
+
+h2 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.3rem, 2vw, 2rem);
+}
+
+h3 {
+  margin: 0 0 0.5rem;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.68rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn.primary {
+  border-color: transparent;
+  background: linear-gradient(135deg, #74c0fc, #8ce99a);
+  color: #052238;
+}
+
+.panel,
+.card {
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: linear-gradient(180deg, var(--card), var(--bg-soft));
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.timeline {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.meta {
+  margin-bottom: 0.4rem;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.note p {
+  margin-bottom: 0.9rem;
+}
+
+code {
+  font-size: 0.9em;
+  color: #d4f4ff;
+}
+
+@media (max-width: 860px) {
+  .cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
