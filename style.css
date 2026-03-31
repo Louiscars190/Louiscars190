@@ -155,12 +155,18 @@ h2 {
   margin: 0 0 0.45rem;
 }
 
+.grid-image-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .project-photo {
-  width: 100%;
+  width: 50%;
   max-width: 520px;
   border-radius: 12px;
   border: 1px solid var(--border);
-  margin: 0.35rem 0 0.8rem;
+  margin: 0 auto;
 }
 
 .meta {
