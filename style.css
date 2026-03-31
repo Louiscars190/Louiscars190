@@ -211,12 +211,70 @@ h2 {
   font-size: 0.9rem;
 }
 
+
 .cv-embed {
   width: 100%;
   min-height: 70vh;
   border: 1px solid var(--border);
   border-radius: 12px;
+  background: #0b1220;
+  overflow: hidden;
+}
+
+.pdf-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.pdf-btn {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #111827;
+  color: var(--text);
+  font: inherit;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+
+.pdf-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.pdf-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.pdf-status {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.pdf-canvas-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.9rem;
+  background: #0b1220;
+  overflow: auto;
+  max-height: 72vh;
+}
+
+#pdf-canvas {
+  max-width: 100%;
+  height: auto;
   background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.pdf-fallback {
+  padding: 1rem;
 }
 
 .cv-actions p {

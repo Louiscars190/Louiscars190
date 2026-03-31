@@ -105,17 +105,23 @@
       <section id="cv" class="section container">
         <h2>CV</h2>
         <div class="cv-panel">
-          <iframe
-            class="cv-embed"
-            src="./assets/Mechanical_Resume_Louis.pdf#view=FitH"
-            title="Louis Nguyen CV"
-            loading="lazy"
-          >
-            <p>
-              Your browser cannot preview this PDF.
+          <div class="cv-embed" id="cv-pdfjs-viewer" aria-label="Louis Nguyen CV PDF preview">
+            <div class="pdf-toolbar" role="group" aria-label="PDF controls">
+              <button class="pdf-btn" id="pdf-prev" type="button">Previous</button>
+              <span class="pdf-status" id="pdf-page-status">Page 1 / 1</span>
+              <button class="pdf-btn" id="pdf-next" type="button">Next</button>
+              <button class="pdf-btn" id="pdf-zoom-out" type="button">-</button>
+              <span class="pdf-status" id="pdf-zoom-status">100%</span>
+              <button class="pdf-btn" id="pdf-zoom-in" type="button">+</button>
+            </div>
+            <div class="pdf-canvas-wrap">
+              <canvas id="pdf-canvas"></canvas>
+            </div>
+            <p class="pdf-fallback" id="pdf-fallback" hidden>
+              Could not load the in-page PDF preview.
               <a href="./assets/Mechanical_Resume_Louis.pdf" target="_blank" rel="noopener">Open it in a new tab</a>.
             </p>
-          </iframe>
+          </div>
           <div class="cv-actions">
             <a class="btn btn-primary" href="./assets/Mechanical_Resume_Louis.pdf" target="_blank" rel="noopener">Open / Download CV</a>
             <p>If the preview does not load in your browser, use the button above to open the PDF directly.</p>
@@ -123,5 +129,7 @@
         </div>
       </section>
     </main>
-  </body>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.3.136/pdf.min.js"></script>
+    <script src="main.js"></script>
+</body>
 </html>
