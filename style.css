@@ -76,6 +76,18 @@ body {
   padding: 5.5rem 0 3rem;
 }
 
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
 .eyebrow {
   color: var(--accent-2);
   margin: 0;
@@ -101,6 +113,20 @@ h1 {
   gap: 0.8rem;
   flex-wrap: wrap;
   margin-top: 1.4rem;
+}
+
+.hero-image-wrap {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.hero-profile-photo {
+  width: clamp(180px, 24vw, 300px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--border);
+  display: block;
 }
 
 .btn {
@@ -217,6 +243,17 @@ p {
   text-align: center;
   color: #374151;
   font-size: 0.9rem;
+}
+
+@media (max-width: 860px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .hero-image-wrap {
+    margin-left: 0;
+  }
 }
 
 .cv-preview h4 {
