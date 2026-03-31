@@ -1,0 +1,5 @@
+# Local/runtime caches that should never be committed
+node_modules/.cache/
+node_modules/.vite/
+node_modules/.vite/**
+node_modules/.vite*/
