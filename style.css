@@ -48,6 +48,7 @@ body {
 
 .brand {
   color: #fff;
+  font-size: 25px;
   font-weight: 800;
   letter-spacing: 0.4px;
   text-decoration: none;
@@ -81,7 +82,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  font-size: 0.8rem;
+  font-size: 22px;
 }
 
 h1 {
@@ -127,7 +128,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-size: :8px;
   margin: 0 0 0.75rem;
 }
 
@@ -155,10 +156,18 @@ h2 {
   margin: 0 0 0.45rem;
 }
 
+h3 {
+  font-size: 25px;
+}
+
 .grid-image-container {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+p {
+  font-size: 20px;
 }
 
 .project-photo {
